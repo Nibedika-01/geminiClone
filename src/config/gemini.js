@@ -3,7 +3,6 @@ require('dotenv').config(); // To load API key from .env file
 const { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } = require("@google/generative-ai");
 
 const MODEL_NAME = "gemini-0.1-pro";
-// Use the environment variable to load API key safely
 const API_KEY = process.env.GEMINI_API_KEY;
 
 async function runChat(prompt) {
